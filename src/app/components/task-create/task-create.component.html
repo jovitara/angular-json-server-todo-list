@@ -2,7 +2,7 @@
 
 <form (ngSubmit)="taskCreate()">
   <div class="row">
-    <div class="col-4">
+    <div class="col-3">
       <div class="form-group">
         <!-- [(ngModel)] -->
         <input type="text"
@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-3">
       <div class="form-group">
         <input type="text"
         placeholder="Enter Author name"
@@ -23,7 +23,14 @@
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-3">
+      <select name="priority" [(ngModel)]="task.priority">
+        <option value="high" [ngValue]="'high'">High</option>
+        <option value="low" [ngValue]="'low'">Low</option>
+      </select>
+    </div>
+
+    <div class="col-3">
       <div class="form-group">
         <input type="submit" class="btn btn-primary" value="Add Task">
       </div>

@@ -14,6 +14,7 @@ export class TaskCreateComponent implements OnInit {
     title: "",
     completed: false,
     author: "",
+    priority: ""
   };
 
   @Output() newItemEvent = new EventEmitter();
