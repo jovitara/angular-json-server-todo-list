@@ -1,0 +1,35 @@
+<h1>Create User</h1>
+
+<form (ngSubmit)="userCreate()">
+  <div class="row">
+    <div class="col-4">
+      <div class="form-group">
+        <!-- [(ngModel)] -->
+        <input type="text"
+        [(ngModel)]="user.name"
+        placeholder="Enter User name"
+        name="name"
+        class="form-controll" />
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="form-group">
+        <input type="text"
+        placeholder="Enter User email"
+        [(ngModel)]="user.email"
+        name="email"
+        class="form-controll" />
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Add User">
+      </div>
+    </div>
+  </div>
+
+
+</form>
+

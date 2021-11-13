@@ -1,8 +1,75 @@
 {
   "tasks": [
-    { "id": 1, "title": "pasiruosimas", "author": "Jovita" },
-    { "id": 2, "title": "planavimas", "author": "Jovita" },
-    { "id": 3, "title": "rengimas", "author": "Jovita" },
-    { "id": 4, "title": "diegimas", "author": "Jovita" }
+    {
+      "id": 1,
+      "title": "pasiruosimas",
+      "author": "Jovita",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "planavimas",
+      "author": "Jovita",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "diegimas",
+      "author": "Jovita",
+      "completed": false
+    },
+    {
+      "title": "pirkimas",
+      "completed": false,
+      "author": "Jonas",
+      "id": 5
+    },
+    {
+      "title": "nauja uzduotis",
+      "completed": false,
+      "author": "Jovita",
+      "id": 6
+    },
+    {
+      "title": "pristatymas",
+      "completed": false,
+      "author": "Tadas",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "name": "Test",
+      "email": "test@test.lt"
+    },
+    {
+      "id": 3,
+      "name": "Test",
+      "email": "test@test.lt"
+    },
+    {
+      "id": 4,
+      "name": "Test",
+      "email": "test@test.lt"
+    },
+    {
+      "name": "Jovita",
+      "email": "jovita@jovita.lt",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "name": "Tadas",
+      "email": "tadas@tadas.lt",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "name": "Jonas",
+      "email": "jonas@jonas.lt",
+      "completed": false,
+      "id": 7
+    }
   ]
 }

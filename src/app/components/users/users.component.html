@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1><i class="bi bi-activity"></i> Users List </h1>
+      </div>
+  
+      <div class="col-12">
+        
+        <app-user-create (newItemEvent)="getUsers()"></app-user-create>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>User name</th>
+            <th>User email</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <!-- Dinaminis klases pridejimas elementui:
+        [class.class-name]
+        -->
+        <tr *ngFor="let user of users" [class.user-completed]=user.completed>
+          <td>
+            <!-- Ateityje si elementa naudosime, pazymeti uzduotis kaip baigtas -->
+            <!-- [checked] - dinaminis checked atributo priskyrimas -->
+            <!-- <input type="checkbox" [checked]="task.completed" (change)="toggleTask(task)"> -->
+          </td>
+          <td><i class="bi bi-person-circle"></i>{{user.name}} </td>
+          <td><i class="bi bi-envelope"></i>{{user.email}}</td>
+          <td>{{user.id}}</td>
+          <td>
+            <button
+            (click)="deleteUser(user)"
+            class="btn btn-danger bg-danger">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  

@@ -12,16 +12,8 @@ import { TaskService } from './services/task.service';
 export class AppComponent {
   title = 'angular-json-server-todo-list';
 
-  public tasks : Task[] = [];
+  // Nurodome, kad kintamasis yra Task tipo masyvas
   // Injectiname tasks service i komponenta
-  constructor(private _taskService: TaskService) {
-
-    // Gauname duomenis is task Service
-    this._taskService
-      .getTasks()
-      .subscribe((data : Task[]) => {
-          this.tasks = data;
-          // console.log(this.tasks);
-      });
+  constructor() {
   }
 }
